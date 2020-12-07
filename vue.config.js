@@ -87,6 +87,8 @@ module.exports = {
   },
 
   devServer: {
+    //web 服务
+    host: "8.133.160.19",
     port: 8080,
     proxy: {
      /* '/api': {
@@ -98,7 +100,7 @@ module.exports = {
         }
       },*/
       '/jeecg-boot': {
-        target: 'http://localhost:8080', //请求本地 需要jeecg-boot后台项目
+        target: 'http://8.133.160.19:8086', //请求本地 需要jeecg-boot后台项目
         ws: false,
         changeOrigin: true
       },
