@@ -87,8 +87,6 @@ module.exports = {
   },
 
   devServer: {
-    //web 服务
-    host: "8.133.160.19",
     port: 8080,
     proxy: {
      /* '/api': {
