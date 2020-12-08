@@ -23,7 +23,7 @@ module.exports = {
   //   }
   // },
   //打包app时放开该配置
-  //publicPath:'./',
+  publicPath:'/jeecg-boot-web/',
   configureWebpack: config => {
     //生产环境取消 console.log
     if (process.env.NODE_ENV === 'production') {
@@ -87,7 +87,7 @@ module.exports = {
   },
 
   devServer: {
-    port: 8080,
+    port: 8082,
     proxy: {
      /* '/api': {
         target: 'https://mock.ihx.me/mock/5baf3052f7da7e07e04a5116/antd-pro', //mock API接口系统
